@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    
+}
+body{
+    background: #000000d9;
+    background-image: ;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-image: url("./assets/Title-Image.png");
+    height:700px;
+    width:auto;
+    
+
+}
+nav{
+    display: flex;
+}
+.logo{
+    height: 20px;
+    padding-left: 20px;
+    
+}
+.left-btns{
+    word-spacing: 10px;
+    display: flex;
+    height:20px;
+    width:1000px;
+   margin-right: 40px;
+   
+   
+}
+.headBtn{
+    margin: 0px 10px;
+flex-grow: 1;
+}
+.N{
+    height: 40px;
+    margin: 300px 20px;
+
+}
+.right-btns{
+    margin: 10px 100px;
+    padding-left: 10px;
+    word-spacing: 10px;
+    
+    
+
+
+}
+
