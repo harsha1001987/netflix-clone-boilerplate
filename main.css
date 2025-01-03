@@ -1,56 +1,128 @@
-*{
+/* Global Styles */
+* {
     margin: 0;
     box-sizing: border-box;
     padding: 0;
-    font-family: 'poppins',sans-serif;
-    
+    font-family: 'Poppins', sans-serif;
 }
-body{
+
+body {
     background: #000000d9;
-    background-image: ;
 }
-.header{
+
+/* Header Styling */
+.header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-image: url("./assets/Title-Image.png");
-    height:700px;
-    width:auto;
-    
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+}
 
-}
-nav{
+nav {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
 }
-.logo{
-    height: 20px;
-    padding-left: 20px;
-    
-}
-.left-btns{
-    word-spacing: 10px;
-    display: flex;
-    height:20px;
-    width:1000px;
-   margin-right: 40px;
-   
-   
-}
-.headBtn{
-    margin: 0px 10px;
-flex-grow: 1;
-}
-.N{
+
+.logo {
     height: 40px;
-    margin: 300px 20px;
-
-}
-.right-btns{
-    margin: 10px 100px;
-    padding-left: 10px;
-    word-spacing: 10px;
-    
-    
-
-
 }
 
+/* Left Buttons */
+.left-btns {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.headBtn {
+    margin: 0 10px;
+    flex-grow: 1;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.N {
+    height: 40px;
+    margin-left: 20px;
+}
+
+/* Right Buttons */
+.right-btns {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.right-btns img {
+    height: 30px;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .left-btns {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .headBtn {
+        font-size: 12px;
+    }
+
+    .N {
+        display: none;
+    }
+
+    .right-btns img {
+        height: 25px;
+    }
+
+    .header {
+        height: 500px;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+    .header {
+        height: 400px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .left-btns {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .headBtn {
+        margin: 5px 0;
+        font-size: 10px;
+    }
+
+    .right-btns {
+        margin-top: 10px;
+    }
+
+    .right-btns img {
+        height: 20px;
+    }
+
+    .logo {
+        height: 30px;
+    }
+}
